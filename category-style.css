@@ -1,0 +1,200 @@
+/* CSS files add styling rules to your content */
+
+/* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
+
+@import url("product-style.css");
+
+/*
+////////////////
+  RESET
+///////////////
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", arial, sans-serif;
+  margin: 0 auto;
+  color: #333333;
+  font-size: 12px;
+}
+
+header,
+main,
+footer {
+  width: 960px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+li {
+  list-style: none;
+}
+
+/*
+///////////////////////////
+          HEADER
+//////////////////////////
+*/
+.header {
+  height: 480px;
+  background-image: url("https://cdn.glitch.com/bd2e3872-f26e-49b7-a7b1-fb79078a9b73%2Fheader.jpg?v=1585922259509");
+  background-size: cover;
+  background-position: center;  
+}
+
+.header_filler{
+  font-size: 32px;
+  color: white;
+  font-family: "Merriweather Sans", sans-serif;
+  margin: auto;
+  text-align: center;
+  margin-top: 140px;
+  padding-right: 230px;
+}
+.nav {
+  top: 0;
+  height: 50px;
+  background-color: white;
+  z-index: 1000;
+  font-weight: 300;
+}
+
+.nav__img {
+  width: 100px;
+  height: 100%;
+  float: left;
+}
+
+.nav__img img {
+  position: realative;
+  width: 50px;
+  height: 30px;
+  top: 50%;
+  transform: translateY(50%);
+  margin-left: 10px;
+}
+
+.nav__ul {
+  width: 89%;
+  text-align: center;
+}
+
+.nav__ul__li {
+  display: inline-block;
+  margin: 0 9px;
+  height: 100%;
+}
+
+.nav__ul__li:first-child > a::after {
+  content: "";
+  display: inline-block;
+  margin-bottom: 2px;
+  margin-left: 5px;
+  width: 5px;
+  height: 5px;
+  border-left: solid 1px #000;
+  border-bottom: solid 1px #000;
+  transform-origin: center;
+  transform: rotate(-45deg);
+}
+
+.nav__ul__li:last-child {
+  font-weight: 500;
+}
+
+.nav__ul__li a {
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+.nav__ul__li a:hover{
+  color: #8800cc;
+}
+
+/*
+///////////////////////////
+          MAIN
+//////////////////////////
+*/
+
+.image__gallery{
+  columns: 4;
+  width: 80%;
+  margin: 0 auto;  
+}
+
+.galery__column {
+  float: left;
+  width: 300px;
+  height: auto;
+  padding: 5px;
+}
+
+.galery__foto_column {
+  padding: 20px 0 0 0;
+  height: 200px;
+  font-size: 13px;
+}
+
+.galery__foto{
+  position: relative;
+  text-align: center;
+  width: 120px;
+  height: 100px;
+  overflow: hidden;
+  font-family: "PlayFair Display";
+  font-size: 30px;
+  color: black;  
+}
+/*Taken from style.css*/
+.image__gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+/*
+///////////////////////////
+          FOOTER
+//////////////////////////
+*/
+
+.footer {
+  columns: 4;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer__column div:first-of-type {
+  text-transform: uppercase;
+  width: 95%;
+  font-weight: 600;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.footer__column {
+  padding: 40px 0 0 0;
+  height: 300px;
+  font-size: 13px;
+}
+
+.footer__column__list {
+  padding-top: 20px;
+  line-height: 16px;
+}
+
+.footer__column img {
+  transform: translateX(-10px);
+  padding-top: 10px;
+  width: 100%;
+}

@@ -1,0 +1,394 @@
+/* CSS files add styling rules to your content */
+
+/* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+@import url("product-style.css");
+
+
+
+.section__list{
+  padding-top:35px;
+  padding-right:170px;
+  padding-left:170px;
+  width:960px;
+}
+
+.smallest__box{
+  height:50px;
+  background-size:cover;
+  background-repeat:no-repeat;
+  position:relative
+}
+
+.list__title{
+  text-transform:uppercase;
+  font-size:6px;
+  font-weight:900;
+  margin:25px 0;
+  height:70px;
+  width:170px;
+  float:left;
+  padding:30px 50px 30px 0;
+}
+
+.list__concept{
+  margin:25px 0;
+  height:70px;
+  width:440px;
+  float:right;
+  padding-left:30px;
+  position:relative;
+}
+
+.concept{
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:100%;
+}
+
+.big__box{
+  height:280px;
+  background-size:cover;
+  background-repeat:no-repeat;
+  position:relative
+}
+
+.border__bottom {
+  border-bottom: grey;
+}
+
+.border__right__green{
+  border-right:1.5px solid rgb(0,180,0);
+}
+
+.font__grey {
+  color: grey;
+}
+
+.font__red{
+  color:red;
+}
+
+.font__green{
+  color:rgb(0, 180, 0)
+}
+
+.font__white{
+  color:white;
+}
+
+.tag__pink__start {
+}
+
+.tag__pink__end {
+}
+
+.text__center {
+  text-align:center;
+}
+
+.absolute__vertical__middle{
+  position:absolute;
+  top:40%;
+}
+
+.absolute__middle{
+  position:absolute;
+  top
+}
+
+.absolute__30{
+  right:35%;
+  left:35%
+}
+
+.padding {
+  padding: 0 30px;
+}
+
+.left__icon{
+  margin-right:5px;float:left;line-height:150%;font-size:14px;
+}
+
+/*
+////////////////
+  RESET
+///////////////
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato",arial, sans-serif;
+  margin: 0 auto;
+  color: #333333;
+  font-weight:100;
+  font-size: 8px;
+  width: 960px;
+}
+
+header,
+main,
+footer {
+  width: 960px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+li {
+  list-style: none;
+}
+
+h2{
+  font-size:18px;
+  font-weight:900;
+}
+
+h1{
+  font-size:30px;
+  font-weight:900;
+}
+
+/*
+///////////////////////////
+          HEADER
+//////////////////////////
+*/
+.header {
+  height: 480px;
+  background-image: url("https://cdn.glitch.com/bd2e3872-f26e-49b7-a7b1-fb79078a9b73%2Fheader.jpg?v=1585922259509");
+  background-size: cover;
+  background-position: center;
+}
+
+.header_filler{
+  font-size: 24px;
+  color: white;
+  font-family: "Merriweather Sans", sans-serif;
+  margin: auto;
+}
+.nav {
+  top: 0;
+  height: 50px;
+  background-color: white;
+  z-index: 1000;
+  font-weight: 300;
+}
+
+.nav__img {
+  width: 100px;
+  height: 100%;
+  float: left;
+}
+
+.nav__img img {
+  position: realative;
+  width: 50px;
+  height: 30px;
+  top: 50%;
+  transform: translateY(50%);
+  margin-left: 10px;
+}
+
+.nav__ul {
+  width: 89%;
+  text-align: center;
+}
+
+.nav__ul__li {
+  display: inline-block;
+  margin: 0 9px;
+  height: 100%;
+}
+
+.nav__ul__li:first-child > a::after {
+  content: "";
+  display: inline-block;
+  margin-bottom: 2px;
+  margin-left: 5px;
+  width: 5px;
+  height: 5px;
+  border-left: solid 1px #000;
+  border-bottom: solid 1px #000;
+  transform-origin: center;
+  transform: rotate(-45deg);
+}
+
+.nav__ul__li:last-child {
+  font-weight: 500;
+}
+
+.nav__ul__li a {
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+.nav__ul__li a:hover{
+  color: #8800cc;
+}
+
+/*
+///////////////////////////
+          MAIN
+//////////////////////////
+*/
+
+.promotion {
+  padding-top: 10px;
+}
+
+.promotion__div {
+  width: 960;
+  height: 70px;
+  background-color: rgb(245, 198, 195);
+  color: white;
+  text-align: center;
+}
+
+.promotion__div__p {
+  position: relative;
+  line-height: 70px;
+  top: -10px;
+  font-size: 24px;
+  word-spacing: 4px;
+  font-weight: 600;
+}
+
+.promotion__div__p--40 {
+  position: relative;
+  font-size: 60px;
+  font-weight: 900;
+  top: 10px;
+}
+
+.promotion__div__p--40 > span {
+  font-weight: 100;
+}
+
+.promotion__div__p--envio {
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.promotion__div__p--pedido {
+  position: relative;
+  top: -4px;
+}
+
+.image__gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+.image__container__left,
+.image__container__right {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  width: 480px;
+  height: 280px;
+  overflow: hidden;
+  font-family: "PlayFair Display";
+  font-size: 30px;
+  color: white;
+}
+
+.image__container__left {
+  padding: 4px 2px 0px 0px;
+  float: left;
+  transition: all 0.7s
+}
+
+.image__container__right {
+  padding: 4px 0px 0px 2px;
+  float: right;
+  transition: all 0.7s;
+}
+
+.image__container__right:hover,
+.image__container__left:hover {
+  opacity: 0.8;
+  transition: all 0.7s;
+  font-size: 34px;
+}
+
+.image__container__right img:hover,
+.image__container__left img:hover {
+  opacity: 0.8;
+  transition: all 0.7s;
+}
+
+.image__container__left h3,
+.image__container__right h3 {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+#h3-2 {
+  bottom: 60px;
+  color: #333333;
+}
+
+.image__container__right p {
+  position: absolute;
+  bottom: 16%;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: Lato;
+  color: #333333;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+/*
+///////////////////////////
+          FOOTER
+//////////////////////////
+*/
+
+.footer {
+  columns: 4;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer__column div:first-of-type {
+  text-transform: uppercase;
+  width: 95%;
+  font-weight: 600;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.footer__column {
+  padding: 40px 0 0 0;
+  height: 300px;
+  font-size: 13px;
+}
+
+.footer__column__list {
+  padding-top: 20px;
+  line-height: 16px;
+}
+
+.footer__column img {
+  transform: translateX(-10px);
+  padding-top: 10px;
+  width: 100%;
+}
